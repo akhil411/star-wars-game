@@ -1,0 +1,128 @@
+body {
+    background: url(../images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+.heading-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.player-profile {
+    background-color: white;
+    height: 110px;
+    width: 150px;
+    border: 3px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.player-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.player-image {
+    height: 65px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid black;
+    position: absolute;
+    left: 22px;
+}
+
+.health-points {
+    position: absolute;
+    bottom: -4px;
+    left: 55px;
+    font-weight: bold;
+}
+
+.live-status, .status {
+    color: white;
+    font-weight: bold;
+    display: none;
+    width: 100%;
+}
+
+.kenobi-image {
+    background-image: url("../images/van-kenobi.jpg");
+    
+}
+
+.skywalker-image {
+    background-image: url("../images/luke-skywalker.jpg");
+    
+}
+
+.sidious-image {
+    background-image: url("../images/darth-sidious.jpg");
+    
+}
+
+.maul-image {
+    background-image: url("../images/darth-maul.jpg");
+    
+}
+
+.block-heading {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: x-large;
+    width: 100%;
+}
+
+#buttonAttack {
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-parameters {
+    width: 100%;
+    display: none;
+}
+
+#buttonAttack {
+    cursor: pointer;
+}
+
+.enemy-profile .player-profile {
+    background-color: red;
+}
+
+.fighting-profile .player-profile {
+    background-color: violet;
+}
+
+.restart-button {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#attackPoint, #counterPoint {
+    color: gold;
+}
+
+.defeated, .defender {
+    color: gold;
+}
+
+.loss-status, .final-status {
+    color: gold;
+}
