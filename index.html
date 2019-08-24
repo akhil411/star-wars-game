@@ -9,69 +9,78 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/game.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
-
-  
-
 </head>
 
 <body>
     <div class="container">
-      <div class="row heading-text">
-          <div>
+      <div class="row">
+          <div class="col heading-text">
             <h1>Stars Wars RPG</h1>
           </div>
       </div>
-      <div class="row choose-text block-heading">Select Your Character</div>
-      <div class="row profile-pick">
-          <div class="player-profile van-kenobi">
-              <div class="player-text">Van Kenobi</div>
-              <div class="player-image kenobi-image"></div>
-              <div class="health-points kenobiHealth"></div>
-          </div>
-          <div class="player-profile luke-skywalker">
-              <div class="player-text">Luke Skywalker</div>
-              <div class="player-image skywalker-image"></div>
-              <div class="health-points skywalkerHealth"></div>
-          </div>
-          <div class="player-profile darth-sidious">
-              <div class="player-text">Darth Sidious</div>
-              <div class="player-image sidious-image"></div>
-              <div class="health-points sidiousHealth"></div>
-          </div>
-          <div class="player-profile darth-maul">
-              <div class="player-text">Darth Maul</div>
-              <div class="player-image maul-image"></div>
-              <div class="health-points maulHealth"></div>
-          </div>
-      </div>
+      <div class="row"><div class="col choose-text block-heading">Select Your Character</div></div>
       <div class="row">
-          <div class="block-heading character-selection">Your Character</div>
-      </div>
-      <div class="row">
-          <div class="your-profile"></div>
-      </div>
-      <div class="row">
-          <div class="block-heading enemies-available">Enemies Available to Attack</div>
-      </div>
-      <div class="row enemy-profile"></div>
-      <div class="row fight-section">
-          <div class="block-heading fight-text">Fight Section</div>
-          <div class="button-parameters"><button id="buttonAttack">ATTACK</button></div>
-          <div class="block-heading defender-text">Defender</div>
-      </div>
-      <div class="row fighting-profile"></div>
-      <div class="row point-update">
-        <div class="live-status">You attacked <span class="defender"></span> for <span id="attackPoint"></span> damage.</div>
-        <div class="live-status"><span class="defender"></span> attacked you back for <span id="counterPoint"></span> damage.</div>
-        <div class="win-status status">You have defeated <span class="defeated"></span>. You can choose to fight another enemy</div>
-        <div class="loss-status status">
-            <p>YOU HAVE BEEN DEFEATED   GAME OVER!!!</p>
-            <button class="restart-button">RESTART</button>
+          <div class="col profile-pick">
+              <div class="player-profile van-kenobi">
+                  <div class="player-text">Van Kenobi</div>
+                  <div class="player-image kenobi-image"></div>
+                  <div class="health-points kenobiHealth"></div>
+              </div>
+              <div class="player-profile luke-skywalker">
+                  <div class="player-text">Luke Skywalker</div>
+                  <div class="player-image skywalker-image"></div>
+                  <div class="health-points skywalkerHealth"></div>
+              </div>
+              <div class="player-profile darth-sidious">
+                  <div class="player-text">Darth Sidious</div>
+                  <div class="player-image sidious-image"></div>
+                  <div class="health-points sidiousHealth"></div>
+              </div>
+              <div class="player-profile darth-maul">
+                  <div class="player-text">Darth Maul</div>
+                  <div class="player-image maul-image"></div>
+                  <div class="health-points maulHealth"></div>
+              </div>
+          </div>
         </div>
-        <div class="final-status status">
-            <p>YOU WON  GAME OVER!!!</p>
-            <button class="restart-button">RESTART</button>
+        <div class="row">
+            <div class="col block-heading character-selection">Your Character</div>
         </div>
+        <div class="row">
+            <div class="col your-profile"></div>
+        </div>
+        <div class="row">
+          <div class="col block-heading enemies-available">Enemies Available to Attack</div>
+        </div>
+        <div class="row">
+            <div class="col enemy-profile"></div>
+        </div>
+        <div class="row">
+          <div class="col fight-section block-heading fight-text">Fight Section</div>
+        </div>
+        <div class="row">
+            <div class="col fight-section button-parameters"><button id="buttonAttack">ATTACK</button></div>
+            </div>
+        <div class="row">
+            <div class="col fight-section block-heading defender-text">Defender</div>
+        </div>
+        <div class="row ">
+            <div class="col fighting-profile"></div>
+        </div>
+        <div class="row">
+            <div class="col point-update">
+                    <div class="live-status">You attacked <span class="defender"></span> for <span id="attackPoint"></span> damage.</div>
+                    <div class="live-status"><span class="defender"></span> attacked you back for <span id="counterPoint"></span> damage.</div>
+                    <div class="win-status status">You have defeated <span class="defeated"></span>. You can choose to fight another enemy</div>
+                    <div class="loss-status status">
+                        <p>YOU HAVE BEEN DEFEATED   GAME OVER!!!</p>
+                        <button class="restart-button">RESTART</button>
+                    </div>
+                    <div class="final-status status">
+                        <p>YOU WON  GAME OVER!!!</p>
+                        <button class="restart-button">RESTART</button>
+                    </div>
+            </div>
       </div>
     </div>
 </body>
